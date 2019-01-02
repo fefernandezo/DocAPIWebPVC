@@ -4,7 +4,7 @@
 ## Obtener Modelos de ventanas
 #### Obtiene las variables de todos los modelos de ventanas de PVC para ser utilizados en la plataforma web.
 
- GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetModels]()
+ GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetModels](cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetModels)
  
  
 #### Retorna JSON Text:
