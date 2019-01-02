@@ -32,7 +32,7 @@
 ## Obtener Vidrios
 #### Obtiene las variables de todos los modelos de vidrios para ser utilizados en los modelos de PVC en la plataforma web.
 
- GET: cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetVidrios
+ GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetVidrios](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetVidrios)
  
  
  #### Retorna JSON Text:
@@ -57,7 +57,7 @@
  ## Consultar un producto específico
  #### Obtiene una simulación de las variables de un producto especificado por el usuario. Sirve para saber el precio de un producto sin realizar una cotización.
  
-  GET:cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetValue
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetValue](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetValue)
   
   ### Parámetros:
      -IDMODEL (string): ID del modelo utilizado.
