@@ -1,10 +1,12 @@
-# Documentacion
+# Documentación
 
 
 ## Obtener Modelos de ventanas
+#### Obtiene las variables de todos los modelos de ventanas de PVC para ser utilizados en la plataforma web.
+
  GET: cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetModels
  
- ### Obtiene las variables todos los modelos de ventanas de PVC para ser utilizados en la plataforma web.
+ 
 
     -ID (string) : Id del modelo.
 
@@ -28,7 +30,11 @@
      - Familia: Línea de perfiles a la cual pertenece el modelo.
      
 ## Obtener Vidrios
+#### Obtiene las variables de todos los modelos de vidrios para ser utilizados en los modelos de PVC en la plataforma web.
+
  GET: cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetVidrios
+ 
+ 
  
     -ID (string): Id del vidrio.
     
@@ -48,4 +54,18 @@
     
     -Estado (boolean): Estado del vidrio true o false.
     
-    
+ ## Consultar un producto específico
+ #### Obtiene una simulación de las variables de un producto especificado por el usuario. Sirve para saber el precio de un producto sin realizar una cotización.
+ 
+  GET:cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetValue
+  
+  ### Parámetros:
+     -IDMODEL (string): ID del modelo utilizado.
+     -IDVIDRIO (string): ID del vidrio utilizado.
+     -COLOR (string): Color utilizado.
+     -CANT (double): Cantidad de productos, solo números enteros.
+     -ANCHO (double): Ancho del producto en milímetros.
+     -ALTO (double): Alto del producto en milímetros.
+     
+ 
+  
