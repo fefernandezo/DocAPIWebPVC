@@ -68,21 +68,20 @@
      -ALTO (double): Alto del producto en milímetros.
      
  #### Retorna JSON Text:
-  
-   -IDENDODET (string): Siempre retorna null (no utilizable).
-   -IDENDO (string): Siempre retorna vacío (no utilizable).
-   -IDMODELO (string): Retorna el ID del modelo de ventana ingresada por el usuario.
-   -NOMBRE (string): Retorna el nombre utilizado por el sistema para identificar el producto.
-   -POS_NR (string): Siempre retorna 0 (no utilizable).
-   -CANTIDAD (double): Retorna la cantidad ingresadav
-   -ANCHO (double): Retorna el Ancho ingresado por el usuario.
-   -ALTO (double): Retorna el Alto ingresado por el usuario.
-   -COLOR (string): retorna el color ingresado por el usuario.
-   -OBSERVACION (string): Siempre retorna vacío (no utilizable).
-   -COSTINSTUN (double): Siempre retorna 0 (no utilizable).
-   -NETOUN (double): Retorna el precio unitario del producto en pesos chilenos.
-   -NETOITM (double): retorna el precio total del item (NETOUN x CANT).
-   -F_CREACION (DateTime): Retorna la fecha de creación de la simulación (no utilizable).
-   -ESTADO (boolean): retorna el estado del producto true o false (no utilizable).
-   -M2UN (double): Retorna el área unitaria del producto en metros cuadrados.
-   -M2ITM (double): Retorna el área total del ítem (M2UN X CANT).
+    -IDENDODET (string): Siempre retorna null (no utilizable).
+    -IDENDO (string): Siempre retorna vacío (no utilizable).
+    -IDMODELO (string): Retorna el ID del modelo de ventana ingresada por el usuario.
+    -NOMBRE (string): Retorna el nombre utilizado por el sistema para identificar el producto.
+    -POS_NR (string): Siempre retorna 0 (no utilizable).
+    -CANTIDAD (double): Retorna la cantidad ingresadav
+    -ANCHO (double): Retorna el Ancho ingresado por el usuario.
+    -ALTO (double): Retorna el Alto ingresado por el usuario.
+    -COLOR (string): retorna el color ingresado por el usuario.
+    -OBSERVACION (string): Siempre retorna vacío (no utilizable).
+    -COSTINSTUN (double): Siempre retorna 0 (no utilizable).
+    -NETOUN (double): Retorna el precio unitario del producto en pesos chilenos.
+    -NETOITM (double): retorna el precio total del item (NETOUN x CANT).
+    -F_CREACION (DateTime): Retorna la fecha de creación de la simulación (no utilizable).
+    -ESTADO (boolean): retorna el estado del producto true o false (no utilizable).
+    -M2UN (double): Retorna el área unitaria del producto en metros cuadrados.
+    -M2ITM (double): Retorna el área total del ítem (M2UN X CANT).
