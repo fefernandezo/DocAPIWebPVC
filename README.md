@@ -90,9 +90,9 @@
     
     -COSTINSTUN (double): Siempre retorna 0 (no utilizable).
     
-    -NETOUN (double): Retorna el precio unitario del producto en pesos chilenos.
+    -NETOUN (double): Retorna el precio unitario del producto en pesos chilenos (sin IVA).
     
-    -NETOITM (double): retorna el precio total del item (NETOUN x CANT).
+    -NETOITM (double): retorna el precio total del item (NETOUN x CANT) sin IVA.
     
     -F_CREACION (DateTime): Retorna la fecha de creación de la simulación (no utilizable).
     
