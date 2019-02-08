@@ -102,3 +102,29 @@
     
     -M2ITM (double): Retorna el área total del ítem (M2UN X CANT).
     
+## Inserta un Item en la cotización
+ #### dos forma de inserta un item: 
+ #### - Crea una cotización e inserta un item dentro de esta. (para esto no de debe pasar id de cotización ni token)
+ #### - Inserta un item dentro de una cotización existente. (para esto es necesario pasar el id de la cotización y el token)
+ 
+ ## En todos los caso es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/SetItem](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/SetItem)
+ 
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+     - IDCOT (string): id de la cotización (acepta valores nulos para crear una nueva)
+     - TOKEN (string): token de la cotización (acepta valores nulos para crear una nueva)
+  ### Parámetros:
+     -IDMODEL (string): ID del modelo utilizado.
+     -IDVIDRIO (string): ID del vidrio utilizado.
+     -COLOR (string): Color utilizado.
+     -CANT (double): Cantidad de productos, solo números enteros.
+     -ANCHO (double): Ancho del producto en milímetros.
+     -ALTO (double): Alto del producto en milímetros.
+     -OBS (string): Campo utilizado para identificar el item (V01,V02, ETC). generalmente es ingresado por el usuario
+     
+ #### Retorna JSON Text:
+    -IDCOT (string): Id de la cotización.
+    -TOKEN (string): Token de la cotización.
+    -GENERADO (boolean): true/false.
