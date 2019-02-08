@@ -176,3 +176,23 @@
     -ITermica (int): Indicador térmico del 1 al 3.
     -ISeguridad (int): Indicar de seguridad del 1 al 3.
     -Estado (boolean): Estado del vidrio true o false.
+
+## Eliminar un item
+ #### Elimina un item de una cotización determinada
+ 
+ ## En todos los caso es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/DeleteItem](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/DeleteItem)
+  
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+     - IDCOT (string): id de la cotización (obligatorio)
+     - TOKEN (string): token de la cotización (obligatorio)
+     
+  ### Parámetros:
+     -IDENDODET (string): ID del item.
+     
+     
+ #### Retorna JSON Text:
+ true/false
