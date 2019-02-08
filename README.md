@@ -147,32 +147,32 @@
      
  #### Retorna JSON Text:
  ### Retorna dos objetos: Detalle, Vidrio
- -Detalle:
-     _-IDENDODET (string): id del item.
-     _-IDENDO(string): id de la cotización.
-     _-IDMODELO(string): Id del modelo utilizado.
-     _-NOMBRE(string): Descripción del item.
-     _-POS_NR(int): Número del item.
-     _-CANTIDAD(int): Cantidad.
-     _-ANCHO(double):ancho.
-     _-ALTO(double):alto.
-     _-COLOR(string):color.
-     _-OBSERVACION(string): Nombre de identificación del item.
-     _-NETOUN(double): Neto unitario.
-     _-NETOITM(double): Neto del item.
-     _-F_CREACION(Datetime): Fecha de creación.
-     _-ESTADO(boolean): estado.
-     _-M2UN(double): Metros cuadrados unitarios.
-     _-M2ITM(double): Metros cuadrados del item.
-     _-URLIMG(string): Imágen a escala referencial del item.
+    -Detalle(objeto):
+       -IDENDODET (string): id del item.
+     -IDENDO(string): id de la cotización.
+     -IDMODELO(string): Id del modelo utilizado.
+     -NOMBRE(string): Descripción del item.
+     -POS_NR(int): Número del item.
+     -CANTIDAD(int): Cantidad.
+     -ANCHO(double):ancho.
+     -ALTO(double):alto.
+     -COLOR(string):color.
+     -OBSERVACION(string): Nombre de identificación del item.
+     -NETOUN(double): Neto unitario.
+     -NETOITM(double): Neto del item.
+     -F_CREACION(Datetime): Fecha de creación.
+     -ESTADO(boolean): estado.
+     -M2UN(double): Metros cuadrados unitarios.
+     -M2ITM(double): Metros cuadrados del item.
+     -URLIMG(string): Imágen a escala referencial del item.
      
- -Vidrio:
-    _-ID (string): Id del vidrio.
-    _-Nombre (string): Nombre del Vidrio.
-    _-Descripción (string): Descripción del vidrio.
-    _-Codigos (string[]): Códigos de Alfak de la composición del DVH.
-    _-IAcustica (int): Indicador de acústica del 1 al 3.
-    _-ISolar (int): Indicador solar del 1 al 3.
-    _-ITermica (int): Indicador térmico del 1 al 3.
-    _-ISeguridad (int): Indicar de seguridad del 1 al 3.
-    _-Estado (boolean): Estado del vidrio true o false.
+    -Vidrio(objeto):
+    -ID (string): Id del vidrio.
+    -Nombre (string): Nombre del Vidrio.
+    -Descripción (string): Descripción del vidrio.
+    -Codigos (string[]): Códigos de Alfak de la composición del DVH.
+    -IAcustica (int): Indicador de acústica del 1 al 3.
+    -ISolar (int): Indicador solar del 1 al 3.
+    -ITermica (int): Indicador térmico del 1 al 3.
+    -ISeguridad (int): Indicar de seguridad del 1 al 3.
+    -Estado (boolean): Estado del vidrio true o false.
