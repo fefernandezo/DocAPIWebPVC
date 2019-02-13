@@ -12,11 +12,13 @@
 
     -Nombre (string): Nombre del modelo.
 
-    -Desripcion (string): Descripcion del modelo.
+    -Descripcion (string): Descripcion del modelo.
 
     -Imagenes (string[]): URL imágenes disponibles para el modelo.
 
     -Colores (string[]): Colores disponibles para el modelo.
+    
+    -ImgModelo (string) : Imágen principal del modelo.
     
     -Restricciones (object(nombre,valor)): restricciones del modelo en milímetros.
         * AnchoMin: Ancho mínimo del modelo.
