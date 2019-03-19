@@ -198,3 +198,113 @@
      
  #### Retorna JSON Text:
  true/false
+ 
+ 
+   ## Obtener las regiones disponibles
+ #### Obtiene el objeto de las regiones que están habilitadas
+ 
+ ## En todos los casos es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetRegiones](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetRegiones)
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+   
+     
+ #### Retorna JSON Text:
+    retorna objeto.
+    
+ 
+ 
+ ## Obtener las comunas disponibles para la region seleccionada
+ 
+ #### Obtiene el objeto de las comunas disponibles para la region seleccionada
+ 
+ ## En todos los casos es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetComunas](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/GetComunas)
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+   
+     ### Parámetros:
+     -codigo: Codigo de la region
+     
+ #### Retorna JSON Text:
+    retorna objeto.
+
+ 
+ 
+   ## Poner costo de despacho
+ #### pone o saca el costo de despacho de la cotizacion
+ 
+ ## En todos los casos es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/Despachoweb](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/Despachoweb)
+  
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+     - IDCOT (string): id de la cotización (obligatorio)
+     - TOKEN (string): token de la cotización (obligatorio)
+     
+  ### Parámetros:
+     -ConDespacho (string): Acepta los siguientes valores:
+     --NO: Quita la instalacion.
+     --SI: Pone instalacion a la cotizacion.
+     -CodRegion (string): codigo de la region.
+     -CodComuna (string): codigo de la comuna.
+     -Direccion (string): direccion de despacho
+     
+     
+     
+ #### Retorna JSON Text:
+ Objeto de encabezado de la cotizacion
+ 
+ 
+ 
+ 
+  ## Poner instalacion a la cotizacion
+ #### pone o saca el costo de instalacion de la cotizacion
+ 
+ ## En todos los casos es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/Instalacionweb](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/Instalacionweb)
+  
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+     - IDCOT (string): id de la cotización (obligatorio)
+     - TOKEN (string): token de la cotización (obligatorio)
+     
+  ### Parámetros:
+     -ConInstalacion (string): Acepta los siguientes valores:
+     --NO: Quita la instalacion.
+     --SI: Pone instalacion a la cotizacion.
+     
+     
+     
+ #### Retorna JSON Text:
+ Objeto de encabezado de la cotizacion
+ 
+ ## Enviar Cotización a la base de datos
+ #### Envia la cotización a la base de datos y le notifica a un ejecutivo para que se contacte con el cliente
+ 
+ ## En todos los caso es necesario la autenticación
+ 
+  GET: [cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/AceptarCotizacion](http://cproyecto.phglass.cl/ServiciosWeb/PVC.asmx/AceptarCotizacion)
+  
+  
+   ## Parámetros del Header
+     - Authorization (string): Clave de identificación.
+     - IDCOT (string): id de la cotización (obligatorio)
+     - TOKEN (string): token de la cotización (obligatorio)
+     
+  ### Parámetros:
+     -Nombre (string): Nombre del cliente.
+     -Telefono (string): Telefono del cliente (acepta valores vacios)
+     -Correo (string): Correo del cliente.
+     
+     
+ #### Retorna JSON Text:
+ True/False
